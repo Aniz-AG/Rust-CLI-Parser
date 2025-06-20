@@ -14,10 +14,13 @@ A simple but extensible command-line tool built in Rust that analyzes and search
 ### Analyze a file
 ```bash
 cargo run -- analyze --file sample.txt
-
-Output JSON
+```
+### **Output JSON**
+```bash
 cargo run -- analyze --file sample.txt --json
-
+```
+### **Output JSON**
+```bash
 Search for a word
 cargo run -- search --file sample.txt --word Redis
 ```
