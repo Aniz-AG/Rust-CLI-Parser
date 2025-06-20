@@ -19,9 +19,8 @@ cargo run -- analyze --file sample.txt
 ```bash
 cargo run -- analyze --file sample.txt --json
 ```
-### **Output JSON**
+### **Search for a word**
 ```bash
-Search for a word
 cargo run -- search --file sample.txt --word Redis
 ```
 ✨ Built With
