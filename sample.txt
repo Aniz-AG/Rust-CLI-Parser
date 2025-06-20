@@ -1,0 +1,29 @@
+# System Design TL;DR
+
+System design is the process of defining the architecture, components, and data flow of a system to satisfy specified requirements.
+
+## Basic Concepts
+
+1. **Load Balancer** – Distributes incoming traffic across multiple servers to ensure reliability and performance.
+2. **Caching** – Stores frequently accessed data in memory to reduce latency and database load.
+3. **Database** – Can be SQL (structured) or NoSQL (document, key-value, etc.). Used for persistent storage.
+4. **API Gateway** – Manages requests, authentication, and routing in microservices architecture.
+
+## Advanced Concepts
+
+1. **Sharding** – A method for horizontally partitioning data across multiple machines to scale databases.
+2. **Message Queues** – Enable asynchronous communication between services, improving decoupling and reliability (e.g., RabbitMQ, Kafka).
+3. **Distributed Systems** – Systems that run on multiple machines but act as a single system to the user. Key challenges: consistency, availability, partition tolerance (CAP theorem).
+4. **CDN (Content Delivery Network)** – Delivers static content via edge servers close to users to reduce latency.
+
+## Example Use Case
+
+Imagine designing Instagram:
+- Use a load balancer in front of backend servers.
+- Store metadata in a relational database.
+- Use object storage (like S3) for images.
+- Cache popular user feeds using Redis.
+- Use Kafka to queue updates for feed generation.
+- Scale read-heavy services separately from write-heavy ones.
+
+System design is a balance between scalability, performance, and complexity.
